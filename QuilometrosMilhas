@@ -1,0 +1,31 @@
+package exerciciosnivelo0;
+
+import java.util.Scanner;
+
+public class ExerciciosNivelo0 {
+
+
+    public static void main(String[] args) {
+       Scanner leia =  new Scanner (System.in);
+               
+       System.out.println(" Informe um valor expresso em quilômetros ");
+       double quilometros = leia.nextDouble();
+        
+       System.out.println(" Informe o quilometro para ser convertido para metros: ");
+       double metros = leia.nextDouble();
+       double resposta1 = (quilometros* 1000); 
+       System.out.println(" A resposta é: "+resposta1 +" metros");
+               
+       System.out.println(" Informe o quilometro para ser convertido em centímetros: ");
+       double centimetros = leia.nextDouble();
+       double resposta2 = (quilometros*100000); 
+       System.out.println("A resposta é: "+resposta2 + "centimetros");
+       
+       System.out.println("Informe o quilometro para ser convertido em milhas: ");
+       double milhas = leia.nextDouble();
+       double resposta3 = (quilometros /1.609);
+       System.out.println("A resposta é: "+resposta3 + "milhas");
+       
+    }
+    
+}
